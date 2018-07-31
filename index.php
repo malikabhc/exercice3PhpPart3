@@ -1,6 +1,6 @@
 <?php
   $firstNumber = 100;
-  $secondNumber = 94;
+  $secondNumber = rand(1,100);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -12,9 +12,15 @@
     <p>
     <?php
       while ($firstNumber >= 10) {
-        echo $firstNumber * $secondNumber;
+        echo $firstNumber * $secondNumber . ' ';
         $firstNumber--;
       }
+
+/*Autre possibilité la boucle for
+      for ($firstNumber = 100; $firstNumber >= 10; $firstNumber--) {
+        echo $firstNumber * $secondNumber . ' ';
+      }
+*/
     ?>
     </p>
   </body>
